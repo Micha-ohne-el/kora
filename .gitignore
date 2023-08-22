@@ -1,2 +1,5 @@
-.gradle/
-/build/
+/.gradle/
+
+/cli/build/
+/common/build/
+/compiler/build/
