@@ -7,8 +7,4 @@ kotlin {
 	macosX64()
 	mingwX64()
 	jvm()
-	js {
-		nodejs()
-		browser()
-	}
 }

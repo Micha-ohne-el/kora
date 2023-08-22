@@ -1,11 +1,9 @@
 import expressions.LiteralExpression
-import kotlin.js.JsName
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class InterpreterTest {
 	@Test
-	@JsName("calling_run_passes_source_code_to_parser")
 	fun `calling run passes source code to parser`() {
 		val parser = SpyParser()
 
