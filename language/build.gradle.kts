@@ -18,5 +18,11 @@ kotlin {
 				implementation(project(":common"))
 			}
 		}
+
+		getByName("commonTest") {
+			dependencies {
+				implementation(kotlin("test"))
+			}
+		}
 	}
 }

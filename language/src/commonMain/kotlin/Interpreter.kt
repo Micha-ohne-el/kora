@@ -1,12 +1,11 @@
-class Interpreter {
+class Interpreter(
+	private val expressionParser: CanParseExpression = Parser(),
+) {
 	fun run(sourceCode: String): String {
-		val expression = parser.parseExpression(sourceCode)
+		val expression = expressionParser.parseExpression(sourceCode)
 
 		val result = expression.evaluate()
 
 		return result.toString()
 	}
-
-
-	private val parser = Parser()
 }
