@@ -19,4 +19,12 @@ kotlin {
 			}
 		}
 	}
+
+	sourceSets {
+		getByName("commonMain") {
+			dependencies {
+				implementation(project(":common"))
+			}
+		}
+	}
 }

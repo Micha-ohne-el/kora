@@ -11,4 +11,12 @@ kotlin {
 		nodejs()
 		browser()
 	}
+
+	sourceSets {
+		getByName("commonMain") {
+			dependencies {
+				implementation(project(":common"))
+			}
+		}
+	}
 }
