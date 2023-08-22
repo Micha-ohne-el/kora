@@ -5,10 +5,8 @@ class Execute : CliktCommand() {
 	private val code by argument()
 
 	override fun run() {
-		val interpreter = KoraInterpreter()
+		val interpreter = Interpreter()
 
-		interpreter.add(code)
-
-		echo(interpreter.run())
+		echo(interpreter.run(code))
 	}
 }
