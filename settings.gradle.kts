@@ -2,6 +2,6 @@ rootProject.name = "kora"
 
 include(
 	"common",
-	"compiler",
+	"language",
 	"cli",
 )
