@@ -1,3 +1,1 @@
-fun main() {
-	println("test")
-}
+fun main(args: Array<String>) = Kora().main(args)

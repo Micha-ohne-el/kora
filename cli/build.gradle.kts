@@ -24,6 +24,8 @@ kotlin {
 		getByName("commonMain") {
 			dependencies {
 				implementation(project(":common"))
+
+				implementation("com.github.ajalt.clikt:clikt:4.2.0")
 			}
 		}
 	}
