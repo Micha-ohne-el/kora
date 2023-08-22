@@ -11,7 +11,7 @@ class InterpreterTest {
 
 		interpreter.run("test source code")
 
-		assertEquals("NOT CORRECT", parser.receivedSourceCode)
+		assertEquals("test source code", parser.receivedSourceCode)
 	}
 
 
