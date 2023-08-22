@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+
 plugins {
 	kotlin("multiplatform") version "1.9.0"
 	application
@@ -11,5 +13,14 @@ kotlin {
 	js {
 		nodejs()
 		browser()
+	}
+
+	targets.withType<KotlinNativeTarget> {
+		binaries {
+			executable {
+				entryPoint = "main"
+				baseName = "kora"
+			}
+		}
 	}
 }
