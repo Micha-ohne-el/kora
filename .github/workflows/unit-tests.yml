@@ -32,6 +32,12 @@ jobs:
         if: '!cancelled()'
         run: ./gradlew jvmTest --info
 
+      - name: Publish test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-linux
+          path: build/reports/
+
   test_macos:
     name: Run unit tests on MacOS
     runs-on: macos-latest
@@ -45,6 +51,12 @@ jobs:
         if: '!cancelled()'
         run: ./gradlew jvmTest --info
 
+      - name: Publish test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-macos
+          path: build/reports/
+
   test_windows:
     name: Run unit tests on Windows
     runs-on: windows-latest
@@ -57,3 +69,9 @@ jobs:
       - name: Run JVM tests
         if: '!cancelled()'
         run: ./gradlew.bat jvmTest --info
+
+      - name: Publish test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-windows
+          path: build/reports/
