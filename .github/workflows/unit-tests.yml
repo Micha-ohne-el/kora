@@ -8,6 +8,7 @@ on:
       - '**/gradle.properties'
       - '**/gradlew'
       - '**/gradlew.bat'
+      - '.github/workflows/*'
   pull_request:
     paths:
       - '**.kt'
@@ -15,6 +16,7 @@ on:
       - '**/gradle.properties'
       - '**/gradlew'
       - '**/gradlew.bat'
+      - '.github/workflows/*'
 
 jobs:
   test_linux:
