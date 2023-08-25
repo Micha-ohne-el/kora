@@ -11,7 +11,7 @@ class InterpreterTest {
 
 		interpreter.run("test source code")
 
-		assertEquals("test source code", parser.receivedSourceCode)
+		assertEquals("INTENTIONALLY INCORRECT", parser.receivedSourceCode)
 	}
 
 
